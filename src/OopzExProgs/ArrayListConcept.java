@@ -11,7 +11,7 @@ public class ArrayListConcept {
 		ar.add("Hello");
 		ar.add('M');
 		ar.add(12.33);
-
+		
 		for (int i = 0; i < ar.size(); i++) {
 			System.out.println(ar.get(i));
 		}

@@ -1,30 +1,21 @@
 package interviewProgs;
-
-import java.util.Scanner;
 public class ReverseNumber
 {
     public static void main(String args[])
     {
-        int n, m, a = 0,x;
-        @SuppressWarnings("resource")
-		Scanner s = new Scanner(System.in);
-        System.out.print("Enter any number:");
-        n = s.nextInt();
-        m = n;
-        while(n > 0)
+        int a, b, c,x=0;
+        c=121212161;
+        b=c;
+        while(c>0)
         {
-            x = n % 10;
-            a = a * 10 + x;
-            n = n / 10;
+        	a=c%10;
+        	x=x*10+a;
+        	c=c/10;
         }
-        System.out.println("Number After Reversed is: "+a);
-        if(a == m)
-        {
-            System.out.println("Given number "+m+" is Palindrome");
-        }
-        else
-        {
-            System.out.println("Given number "+m+" is Not Palindrome");
-        }
-    }
+    	System.out.println(x);
+    	if(b==x)
+    	System.out.println("Given number "+x+" is pallindrome");
+    	else
+    	System.out.println("Given number "+x+" is not pallindrome");
+    }	
 }

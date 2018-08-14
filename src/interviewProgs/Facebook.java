@@ -32,7 +32,7 @@ public class Facebook
 		File scrn = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(scrn, new File("D:\\My Sites\\facebook.png"));
 		driver.quit();
-
+		
 		WebDriverWait wait = new WebDriverWait(driver, 60);
 		wait.until(ExpectedConditions.elementToBeSelected(driver.findElement(By.xpath(""))));
 
